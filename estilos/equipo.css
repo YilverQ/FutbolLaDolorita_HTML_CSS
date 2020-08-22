@@ -1,0 +1,507 @@
+/*
+	Colores Principales:
+	Morado= #FC014D	
+	Morado Fuerte= #4c0045
+	Amarillo= #f7b633
+	Azul= #009f9d
+	Rosado= #ffaaaa
+	Blanco-Gris= #E5E8E8
+*/
+
+/*Para todo*/
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background: #d9d9d9;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*Fin del Para Todo*/
+
+/*Fuentes*/
+@font-face{	
+	src:url(../fuentes/Arvo-Regular.ttf);
+	font-family: title;
+}
+@font-face{
+	src:url(../fuentes/Allerta-Regular.ttf);
+	font-family: hola;
+}
+/*Fin de las Fuentes*/
+
+/*Header [[ Cabecera*/
+header{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	background: #FC014D;
+	box-shadow: 2px 2px 2px rgba(10,10,10,0.5);
+	z-index: 2;
+	border-bottom: 3px solid #4c0045;
+}
+h1{
+	font-family: title;
+	font-size: 30px;
+	color: #f3f8ff;
+	text-shadow: 1px 2px 10px rgba(10,10,10,10);
+	float: left;
+	position: relative;
+	left: 20px;
+	top: 5px;
+	padding: 0px 10px;
+}	
+	/*Menú de Navegacion*/
+nav ul{
+	position: relative;
+	top: 5px;
+	right: 10px;
+	float: right;
+	display: flex;
+	padding: 1px;
+}
+nav ul a{
+	padding: 2px 3px;
+	border-left: 2px solid rgba(66, 73, 73,0.2);
+}
+nav ul a li{
+	font-size: 18px;
+	font-family: hola;
+	color: #000;
+	transition: .5s all;
+	border:2px solid #FC014D;
+	padding: 5px; 
+} 
+nav ul a:hover li{
+	border-bottom: 2px solid #4c0045;
+	transition: .5s all;
+}
+	/*Fin del Menú*/
+/*Fin del Header*/
+
+/*Contenido Principal*/
+div.margen{
+	width: 100%;
+	height: 100px;
+}
+/*Contenido Principal*/
+
+article.main{
+	width: 90%;
+	margin: auto;
+}
+div.h4{
+	width: 100%;
+}
+div.h4 h4{
+	border-radius: 5px 5px 0px 0px;
+	padding: 1px;
+	font-family: title;
+	font-size: 30px;
+	text-align: center;
+	border-bottom: 4px solid #FC014D;
+	color: white;
+	text-shadow: 1px 2px 10px rgba(10,10,10,10);
+	background: #4c0045;
+	transition: .5s all ease;
+}
+div.caja{
+	background-image: url(../imagenes/fondo12.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 5px;
+}
+div.sabana-caja{
+	border-radius: 5px;
+	background: rgba(10,10,10,0.5); 
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+div.equipoz{
+	width: 300px;
+	height: 150px;
+	margin: auto;
+	border-radius: 4px;
+	background: #E5E8E8;
+	border: 2px solid rgba(252, 1, 77,0.4);
+	transition: 0.5s all;
+}
+div.equipoz img{
+	display: block;
+	margin: 20px auto;
+}
+div.equipoz h5{
+	margin: auto;
+	text-align: center;
+	font-family: title;
+	font-size: 20px;
+	height: 40px;
+	border-radius: 0px 0px 4px 4px;
+	border-top: 4px solid transparent;
+}
+div.jornadas{
+	width: 500px;
+	margin: 20px auto;
+	border-radius: 8px;
+	background: #E5E8E8;
+}
+div.jornadas h6{
+	color: white;
+	text-shadow: 1px 2px 2px rgba(10,10,10,10);
+	text-align: center;
+	font-family: title;
+	font-size: 17px;
+	background: #FC014D;
+	padding: 5px;
+	border-radius: 4px 4px 0px 0px;
+}
+div.partido{
+	padding: 20px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	transition: .5s all;
+}
+div#ultimo{
+	border-radius: 0px 0px 5px 5px;
+	transition: .5s all;
+}
+div.partido:hover{
+	transition: .5s all;
+	background: #ffc1c8;
+}
+div.equipo1{
+	width: 33%;
+}
+div.hora{
+	width: 33%;
+	font-size: 15px;
+	font-family: hola;
+}
+div.partido h3{
+	font-family: title;
+	font-size: 15px;
+}
+/*Fin del Contenido Principal*/
+
+/*Racha*/
+div.racha{
+	margin: 50px;
+	border-radius: 4px;
+	background: #e3e3e3;
+	border: 2px solid rgba(252, 1, 77,0.4);
+}
+div.h3{
+	width: 300px;
+	border-bottom: 4px solid rgba(252, 1, 77,0.4);
+	margin: auto;
+}
+div.h3 h3{
+	text-align: center;
+	font-family: title;
+	font-size: 25px;
+	padding-top: 15px;
+}
+div.numeros-racha ul.numeros-div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	margin: 20px 0px;
+}
+div.numeros-racha li{
+	width: 20%;
+	text-align: center;
+}
+div.numeros-racha span{
+	font-family: hola;
+	font-size: 15px;
+	font-weight: 500;
+}
+div.numeros-racha p.bordes1{
+	padding: 20px;
+	border-radius: 100%;
+	width: 20px;
+	border: 4px solid #0b8457;
+	margin: auto;
+}
+div.numeros-racha p.bordes2{
+	padding: 20px;
+	border-radius: 100%;
+	width: 20px;
+	border: 4px solid #f3a333;
+	margin: auto;
+}
+div.numeros-racha p.bordes3{
+	padding: 20px;
+	border-radius: 100%;
+	width: 20px;
+	border: 4px solid #cb3737;
+	margin: auto;
+}
+/*Fin del div de Racha*/
+
+/*Div de las Estadisticas*/
+div.h33{
+	width: 300px;
+	border-bottom: 4px solid #FC014D;
+	margin: 20px 0px;
+}
+div.h33 h3{
+	font-size: 20px;
+	font-family: title;
+}
+div.estadi{
+	display: flex;
+	flex-wrap: wrap;
+}
+div.cuadro{
+	border-top: 4px solid rgba(252, 1, 77,1);
+	background: #ffc1c8;
+	width: 16%;
+	padding: 20px 0px;
+}
+div#cuadro-color{
+	background: #FC014D;
+	color: white;
+	text-shadow: 1px 2px 2px rgba(10,10,10,10);
+	border-radius: 5px 0px 0px 5px;
+}
+div#lao{
+	border-radius: 0px 0px 20px 0px;
+}
+div.cuadro ul li{
+	text-align: center;
+	margin: 5px 0px;
+	font-family: hola;
+	font-size: 14px;
+	font-weight: 700;
+	border-left: 2px solid rgba(66, 73, 73,0.4);
+}
+div.cuadro ul li.border-left{
+	border-left: none;
+}
+/*Fin del div de las Estadisticas*/
+
+
+/*Div de Plantilla*/
+div.finald{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+div.plantilla{
+	margin-top: 40px;
+	width: 300px;
+}
+div.plantilla h3{
+	font-family: title;
+	size: 20px;
+	text-align: center;
+}
+div.plantilla ul{
+	padding: 20px;
+	border-top: 4px solid rgba(252, 1, 77,1);
+	background: #ffc1c8;
+}
+div.plantilla ul li{
+	padding: 5px;
+	font-family: hola;
+	font-size: 15px;
+}
+/*Fin del Div de Plantilla*/
+
+/*Footer*/
+footer{
+	width: 100%;
+	margin-top: 100px;
+}
+	/*Primer Footer*/
+div.primer-footer{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background: #4c0045;
+	color: white;
+	font-size: 18px;
+	font-family: title;
+	font-weight: 500;
+	padding: 10px 0px;
+	border-top: 4px solid #FC014D;
+	box-shadow: 2px 2px 2px rgba(10,10,10,0.5);
+}
+div.primer-footer a{
+	color: white;
+	font-weight: 500;
+}
+div.boton-final{
+	float: right;
+	padding: 10px 20px;
+	font-size: 30px;
+	position: relative;
+	bottom: 10px;
+	left: 80px;
+	border-radius: 0px 0px 10px 10px;
+	transition: all 0.5s ease;
+	background: #FC014D;
+	color: white;
+	border: 4px solid #4c0045;
+	border-top: 0px solid transparent;
+}
+div.boton-final:hover{
+	transition: all 0.5s ease;
+	background: #E5E8E8;
+	color: black;
+	border: 4px solid #FC014D;
+	border-top: 0px solid transparent;
+}
+div.primer-footer div.redes{
+	display: flex;
+	justify-content: space-between;
+	text-shadow: 1px 2px 10px rgba(10,10,10,10);
+}
+div.primer-footer div.redes p{
+	margin-right: 50px;
+}
+	/*Fin del Primer Footer*/
+	/*El Segundo Footer*/
+div.segundo-footer{
+	background: #4e2161;
+	color: #d9d9d9;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px;
+}
+div.sector1{
+	width: 30%;
+}
+div.sector1 h5{
+	width: 300px;
+	text-align: center;
+	border-bottom: 4px solid #FC014D;
+	font-family: title;
+	font-size: 20px;
+	font-weight: 700;
+	text-shadow: 1px 2px 10px rgba(10,10,10,10);
+}
+div.sector1 p{
+	padding: 8px;
+	font-family: hola;
+	font-size: 15px;
+}
+div.sector1 ul{
+	padding: 8px;
+	font-family: hola;
+	font-size: 15px;
+}
+div.sector1 li{
+	margin: 4px 0px;
+}
+	/*Fin del Segundo Footer*/
+	/*Tercer Footer*/
+div.tercer-footer{
+	background: #2b2726;
+}
+div.tercer-footer p{
+	text-align: center;
+	font-family: title;
+	font-size: 20px;
+	text-shadow: 1px 2px 10px rgba(10,10,10,10);
+	color: #6c5b7b;
+}
+div.tercer-footer span{
+}
+	/*Fin del Tercer Footer*/
+/*Fin del Footer*/
+
+/*Responsive De la Pagina*/
+@media only screen and (max-width: 1000px){
+	div.sector1 h5{
+		width: 200px;
+	}	
+}
+@media only screen and (max-width: 900px){
+	div.equipoz{
+		margin: 20px auto;
+		width: 400px;
+	}
+	div.jornadas{
+		width: 600px;
+	}
+}
+@media only screen and (max-width: 750px){
+	nav{
+		right: 0px;
+	}
+	h1{
+		left: 0px;
+		}
+}
+@media only screen and (max-width: 678px){
+	div.sector1{
+		width: 100%;
+		text-align: center;
+		margin-top: 20px;
+	}
+	div.sector1 h5{
+		width: 200px;
+		margin: auto;
+	}
+	div.boton-final{
+		left: 20px;
+	}
+	div.partidos{
+		width: 90%;
+		margin: 10px auto;
+	}
+	div.jornadas{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 701px){
+	header{
+		height: 85px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	header h1{
+		text-align: center;
+		width: 100%;
+		margin: auto;
+	}
+	nav ul{
+		width: 100%;
+		top: 0px;
+		left: 6px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+@media only screen and (max-width: 518px){
+	header{
+		height: 150px;
+		position: relative;
+	}
+}
+@media only screen and (max-width: 408px){
+	div.primer-footer div.redes p{
+		margin-right: 0px;
+	}
+}

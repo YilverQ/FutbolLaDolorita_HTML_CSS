@@ -1,0 +1,345 @@
+/*
+	Colores Principales:
+	Morado= #FC014D	
+	Morado Fuerte= #4c0045
+	Amarillo= #f7b633
+	Azul= #009f9d
+	Rosado= #ffaaaa
+	Blanco-Gris= #E5E8E8
+*/
+
+/*Para todo*/
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background: #d9d9d9;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*Fin del Para Todo*/
+
+/*Fuentes*/
+@font-face{	
+	src:url(../fuentes/Arvo-Regular.ttf);
+	font-family: title;
+}
+@font-face{
+	src:url(../fuentes/Allerta-Regular.ttf);
+	font-family: hola;
+}
+/*Fin de las Fuentes*/
+
+/*Header [[ Cabecera*/
+header{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	background: #FC014D;
+	box-shadow: 2px 2px 2px rgba(10,10,10,0.5);
+	z-index: 2;
+	border-bottom: 3px solid #4c0045;
+}
+h1{
+	font-family: title;
+	font-size: 30px;
+	color: #f3f8ff;
+	text-shadow: 1px 2px 10px rgba(10,10,10,10);
+	float: left;
+	position: relative;
+	left: 20px;
+	top: 5px;
+	padding: 0px 10px;
+}	
+	/*Menú de Navegacion*/
+nav ul{
+	position: relative;
+	top: 5px;
+	right: 10px;
+	float: right;
+	display: flex;
+	padding: 1px;
+}
+nav ul a{
+	padding: 2px 3px;
+	border-left: 2px solid rgba(66, 73, 73,0.2);
+}
+nav ul a li{
+	font-size: 18px;
+	font-family: hola;
+	color: #000;
+	transition: .5s all;
+	border:2px solid #FC014D;
+	padding: 5px; 
+} 
+nav ul a:hover li{
+	border-bottom: 2px solid #4c0045;
+	transition: .5s all;
+}
+
+	/*Fin del Menú*/
+/*Fin del Header*/
+div.margen{
+	width: 100%;
+	height: 150px;
+}
+
+/*Contendedor*/
+article.main{
+	width: 90%;
+	margin: auto;
+}
+div.h4{
+	width: 300px;
+	margin: auto;
+}
+div.h4:hover h4{
+	color: #000;
+	background: transparent;
+	transition: .5s all ease;
+	transform: translateY(-5px);
+	border-radius: 10px 10px 2px 2px;
+	text-shadow: 0px 0px 0px rgba(10,10,10,10);
+	border: 2px solid #555;
+	border-bottom: 4px solid #FC014D;
+	box-shadow: 1px 5px 10px rgba(10,10,10,0.5);
+}
+div.h4 h4{
+	padding: 1px;
+	transition: .5s all;
+	font-family: title;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	border: 2px solid transparent;
+	border-bottom: 4px solid #FC014D;
+	color: white;
+	text-shadow: 1px 2px 10px rgba(10,10,10,10);
+	background: #4c0045;
+	transition: .5s all ease;
+	border-radius: 10px 10px 2px 2px;
+}
+div.contenedor{
+	background:#ffaaaa;
+	border-radius: 5px;
+	width: 90%;
+	margin: 20px auto;
+	padding: 10px 5px;
+	border-top: 4px solid #FC014D;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+div.equipo{
+	width: 300px;
+	height: 150px;
+	margin: 10px;
+	border-radius: 4px;
+	background: #E5E8E8;
+	border: 2px solid rgba(252, 1, 77,0.4);
+	transition: 0.5s all;
+}
+div.equipo:hover{
+	transform: translateY(-10px);
+	transition: 0.5s all;
+	background: #ffd3de;
+}
+div.equipo:hover h5{
+	background:  #4c0045;
+	border-top: 4px solid #FC014D;
+	color: white;
+	text-shadow: 1px 2px 10px rgba(10,10,10,10);
+	transition: 0.2s all ease;
+}
+div.equipo h5{
+	margin: auto;
+	text-align: center;
+	font-family: title;
+	font-size: 20px;
+	height: 40px;
+	border-radius: 0px 0px 4px 4px;
+	border-top: 4px solid transparent;
+	transition: 0.2s all ease;
+	color: black;
+}
+div.equipo img{
+	display: block;
+	margin: 20px auto;
+}
+/*Fin del Contenedor*/
+
+
+/*Footer*/
+footer{
+	width: 100%;
+	margin-top: 100px;
+}
+/*Primer Footer*/
+div.primer-footer{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background: #4c0045;
+	color: white;
+	font-size: 18px;
+	font-family: title;
+	font-weight: 500;
+	padding: 10px 0px;
+	border-top: 4px solid #FC014D;
+	box-shadow: 2px 2px 2px rgba(10,10,10,0.5);
+}
+div.primer-footer a{
+	color: white;
+	font-weight: 500;
+}
+div.boton-final{
+	float: right;
+	padding: 10px 20px;
+	font-size: 30px;
+	position: relative;
+	bottom: 10px;
+	left: 80px;
+	border-radius: 0px 0px 10px 10px;
+	transition: all 0.5s ease;
+	background: #FC014D;
+	color: white;
+	border: 4px solid #4c0045;
+	border-top: 0px solid transparent;
+}
+div.boton-final:hover{
+	transition: all 0.5s ease;
+	background: #E5E8E8;
+	color: black;
+	border: 4px solid #FC014D;
+	border-top: 0px solid transparent;
+}
+div.primer-footer div.redes{
+	display: flex;
+	justify-content: space-between;
+	text-shadow: 1px 2px 10px rgba(10,10,10,10);
+}
+div.primer-footer div.redes p{
+	margin-right: 50px;
+}
+/*Fin del Primer Footer*/
+/*El Segundo Footer*/
+div.segundo-footer{
+	background: #4e2161;
+	color: #d9d9d9;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px;
+}
+div.sector1{
+	width: 30%;
+}
+div.sector1 h5{
+	width: 300px;
+	text-align: center;
+	border-bottom: 4px solid #FC014D;
+	font-family: title;
+	font-size: 20px;
+	font-weight: 700;
+	text-shadow: 1px 2px 10px rgba(10,10,10,10);
+}
+div.sector1 p{
+	padding: 8px;
+	font-family: hola;
+	font-size: 15px;
+}
+div.sector1 ul{
+	padding: 8px;
+	font-family: hola;
+	font-size: 15px;
+}
+div.sector1 li{
+	margin: 4px 0px;
+}
+/*Fin del Segundo Footer*/
+/*Tercer Footer*/
+div.tercer-footer{
+	background: #2b2726;
+}
+div.tercer-footer p{
+	text-align: center;
+	font-family: title;
+	font-size: 20px;
+	text-shadow: 1px 2px 10px rgba(10,10,10,10);
+	color: #6c5b7b;
+}
+/*Fin del Tercer Footer*/
+/*Fin del Footer*/
+
+/*Responsive De la Pagina*/
+@media only screen and (max-width: 1000px){
+	div.noticia_final{
+	width: 80%;
+	}
+	div.sector1 h5{
+		width: 200px;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	div.img-main{
+		width: 100%;
+	}
+	div.img-main img{
+		width: 100%;
+		padding: 0px;
+	}
+	div.tabla{
+		width: 100%;
+		padding: 0px;
+	}
+}
+
+@media only screen and (max-width: 750px){
+	nav{
+		right: 0px;
+	}
+	h1{
+		left: 0px;
+}
+@media only screen and (max-width: 701px){
+	header{
+		height: 85px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	header h1{
+		text-align: center;
+		width: 100%;
+		margin: auto;
+	}
+	nav ul{
+		width: 100%;
+		top: 0px;
+		left: 6px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+@media only screen and (max-width: 678px){
+	div.boton-final{
+		left: 20px;
+	}
+}
+
+@media only screen and (max-width: 518px){
+	header{
+		height: 150px;
+		position: relative;
+	}
+}
